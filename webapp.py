@@ -13,6 +13,7 @@ def render_response():
         reply = "that's a good one; it's my pants' color"
     else
         reply = "your color sucks man"
+    return render_template('response.html', response = reply)
     
 if __name__=="__main__":
     app.run(debug=False, port=54321)
