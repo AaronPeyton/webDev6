@@ -12,7 +12,7 @@ def render_response():
     #args is request object. it is a dictionary but it can have multiple same keys; it is visible in url 
     if color == 'pink': # this is just color as a random ass variable name in python
         reply = "that's a good one; it's my pants' color"
-    else
+    else:
         reply = "your color sucks man"
     return render_template('response.html', response = reply)
     
