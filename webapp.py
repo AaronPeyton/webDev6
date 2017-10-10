@@ -1,6 +1,8 @@
 from flask import Flask, url_for, render_template, request
 
-app = Flask(__name__) #__name__ = "__main__" if this is the file that was run.  Otherwise, it is the name of the file (ex. webapp)
+app = Flask(__name__)
+#__name__ = "__main__" if this is the file that was run.
+#Otherwise, it is the name of the file (ex. webapp)
 
 @app.route("/")
 def render_main():
@@ -21,14 +23,14 @@ def render_main():
 
 @app.route("/response")
 def render_response():
-    if 'add1' in request.args and 'add2' in request.args:
-        reply = float(request.args['add1']) + float(request.args['add2'])
-    elif 'mult1' in request.args and 'mult2' in request.args:
-        reply = float(request.args['mult1']) * float(request.args['mult2'])
-    elif 'hex' in request.args:
-        reply = hex(float(request.args['hex']))
-    else:
-        reply = "i really dunno dude"
+    # # if 'add1' in request.args and 'add2' in request.args:
+    #     reply = float(request.args['add1']) + float(request.args['add2'])
+    # elif 'mult1' in request.args and 'mult2' in request.args:
+    #     reply = float(request.args['mult1']) * float(request.args['mult2'])
+    # elif 'hex' in request.args:
+    #     reply = hex(float(request.args['hex']))
+    # else:
+    reply = "i really dunno dude"
     return render_template('response.html', response = reply)
 
 if __name__ == "__main__":
