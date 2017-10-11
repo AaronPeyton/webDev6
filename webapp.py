@@ -8,10 +8,10 @@ app = Flask(__name__)
 def render_main():
     return render_template('index.html')
 
-@app.route("/add")
-def render_main():
-    return render_template('addition.html')
-
+# @app.route("/add")
+# def render_main():
+#     return render_template('addition.html')
+#
 # @app.route("/mult")
 # def render_main():
 #     return render_template('multiplication.html')
