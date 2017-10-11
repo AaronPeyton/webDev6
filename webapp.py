@@ -12,13 +12,13 @@ def render_main():
 def render_main():
     return render_template('addition.html')
 
-@app.route("/mult")
-def render_main():
-    return render_template('multiplication.html')
-
-@app.route("/hex")
-def render_main():
-    return render_template('toHex.html')
+# @app.route("/mult")
+# def render_main():
+#     return render_template('multiplication.html')
+#
+# @app.route("/hex")
+# def render_main():
+#     return render_template('toHex.html')
 
 
 @app.route("/response")
