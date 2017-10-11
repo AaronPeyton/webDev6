@@ -11,14 +11,14 @@ def render_main():
 @app.route("/add")
 def render_main():
     return render_template('addition.html')
-#
-# @app.route("/mult")
-# def render_main():
-#     return render_template('multiplication.html')
-#
-# @app.route("/hex")
-# def render_main():
-#     return render_template('toHex.html')
+
+@app.route("/mult")
+def render_main():
+    return render_template('multiplication.html')
+
+@app.route("/hex")
+def render_main():
+    return render_template('toHex.html')
 
 
 @app.route("/response")
