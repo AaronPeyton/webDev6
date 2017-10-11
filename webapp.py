@@ -8,9 +8,9 @@ app = Flask(__name__)
 def render_main():
     return render_template('home.html')
 
-@app.route("/add")
-def render_main():
-    return render_template('addition.html')
+# @app.route("/add")
+# def render_main():
+#     return render_template('addition.html')
 
 # @app.route("/mult")
 # def render_main():
