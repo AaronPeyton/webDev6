@@ -8,17 +8,17 @@ app = Flask(__name__)
 def render_main():
     return render_template('home.html')
 
-@app.route("/add")
-def render_main():
-    return render_template('addition.html')
-
-@app.route("/mult")
-def render_main():
-    return render_template('multiplication.html')
-
-@app.route("/hex")
-def render_main():
-    return render_template('toHex.html')
+# @app.route("/add")
+# def render_main():
+#     return render_template('addition.html')
+#
+# @app.route("/mult")
+# def render_main():
+#     return render_template('multiplication.html')
+#
+# @app.route("/hex")
+# def render_main():
+#     return render_template('toHex.html')
 
 
 @app.route("/response")
