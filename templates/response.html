@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html>
+{% extends "layout.html" %} {% set active_page = "home" %} {% block title %}response, uhhhh{% endblock %} {% block content %}
 
-<head>
-    <title>Response</title>
-</head>
+<h1>Response:</h1>
+<p> {{ response }} </p>
 
-<body>
-    <h1>Response:</h1>
-    <p> {{ response }} </p>
-</body>
-
-</html>
+{% endblock %}

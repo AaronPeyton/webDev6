@@ -1,19 +1,12 @@
-<!DOCTYPE html>
-<html>
+{% extends "layout.html" % } {% set active_page = "hex" %} {% block title %}Integer to Hexadecimal{% endblock %} {% block content %}
 
-<head>
-    <title>To Hexidecimal from integer</title>
-</head>
 
-<body>
+<form action='/response'>
+    input 1 number to convert to Hexidecimal<br>
+    <input type="number" name="hex">
+    <br>
+    <input type="submit">
+</form>
 
-    <form action='/response'>
-        input 1 number to convert to Hexidecimal<br>
-        <input type="number" name="hex">
-        <br>
-        <input type="submit">
-    </form>
 
-</body>
-
-</html>
+{% endblock %}

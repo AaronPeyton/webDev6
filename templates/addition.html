@@ -1,22 +1,12 @@
-<!DOCTYPE html>
-<html>
+{% extends "layout.html" %} {% set active_page = "add" %} {% block title %}Simple Addition{% endblock %} {% block content %}
 
-<head>
-    <title>addition</title>
-</head>
+<form action='/response'>
+    input 2 numbers to add together<br>
+    <input type="number" name="add1">
+    <br>
+    <input type="number" name="add2">
+    <br>
+    <input type="submit">
+</form>
 
-<body>
-    <h1>Addition</h1>
-
-    <form action='/response'>
-        input 2 numbers to add together<br>
-        <input type="number" name="add1">
-        <br>
-        <input type="number" name="add2">
-        <br>
-        <input type="submit">
-    </form>
-
-</body>
-
-</html>
+{% endblock %}

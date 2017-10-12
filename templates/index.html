@@ -1,18 +1,3 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <title>homepage</title>
-</head>
-
-<body>
-    <h1>Home Page</h1>
-    <ul>
-        <li><a href=".">homePAge</a></li>
-        <li><a href="add">addition</a></li>
-        <li><a href="mult">multiplication</a></li>
-        <li><a href="hex">to hexadecimal</a></li>
-    </ul>
-</body>
-
-</html>
+{% extends "layout.html" %} {% set active_page = "home" %} {% block title %}Derivative Functions{% endblock %} {% block content %}
+<p> this is the hompage of a small website containing a few simple conversions hat are ultimately rather useless in every sense </p>
+{% endblock %}
