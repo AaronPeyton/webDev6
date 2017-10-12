@@ -28,7 +28,7 @@ def render_response():
     elif 'mult1' in request.args and 'mult2' in request.args:
         reply = float(request.args['mult1']) * float(request.args['mult2'])
     elif 'hex' in request.args:
-        reply = hex(float(request.args['hex']))
+        reply = "abcdefghijklmnopqrstuvwxyz"
     else:
       reply = "i really dunno dude"
     # reply = "ahhhhhh. work!"
