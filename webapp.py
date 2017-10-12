@@ -24,10 +24,10 @@ def render_hex():
 @app.route("/response")
 def render_response():
     if 'add1' in request.args and 'add2' in request.args:
-        if request.args['add1'] != null and  request.args['add2'] != null:
+        if request.args['add1'] is None and  request.args['add2'] is None:
             reply = float(request.args['add1']) + float(request.args['add2'])
         else:
-            reply = "null"
+            reply = "empty value"
     elif 'mult1' in request.args and 'mult2' in request.args:
         reply = float(request.args['mult1']) * float(request.args['mult2'])
     elif 'hex' in request.args:
